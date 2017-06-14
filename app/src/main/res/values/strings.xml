@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">智能停车</string>
+    <string name="welcome">智能停车欢迎您！</string>
+    <!--登录界面-->
+    <string name="prompt_phone">手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="account_login">用户登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="action_register">用户注册</string>
+    <string name="action_tourist">游客</string>
+    <string name="toast_phone_error">账号格式不正确</string>
+    <string name="toast_pass_error">密码长度不够</string>
+    <string name="title_scanning">扫描二维码</string>
+    <string name="forget_password">忘记密码?</string>
+    <!--注册界面-->
+    <string name="peompt_phone">手机号</string>
+    <string name="peompt_password">密码</string>
+    <string name="peompt_code">验证码</string>
+    <string name="peompt_IDEM">设备序列号</string>
+    <string name="peompt_getCode"> 获取验证码</string>
+    <string name="peompt_getIemi">扫一扫</string>
+    <string name="peompt_rec">注册</string>
+    <string name="bund_student">绑定学生</string>
+    <string name="type_student">学生</string>
+    <string name="type_parent">家长</string>
+    <string name="toast_code_error">验证码错误</string>
+    <!--忘记密码-->
+    <string name="forget_password_1">忘记密码</string>
+    <string name="forget_next">下一步</string>
+    <!--新密码-->
+    <string name="title_new_password">新密码</string>
+    <string name="hint_new_password">新密码</string>
+    <string name="button_finish">完成</string>
+
+</resources>

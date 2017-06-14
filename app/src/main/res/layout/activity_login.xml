@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    tools:context=".model.loginRegiste.LoginActivity" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/rv_head"
+        style="@style/relative_head" >
+
+        <!-- 顶部导航栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rv_login_hand_daohang"
+            style="@style/daohanglan_relative" >
+
+            <!-- 返回按钮 -->
+
+            <ImageButton
+                android:id="@+id/ibt_reg_back"
+                style="@style/daohanglan_back_button"
+                android:visibility="invisible" />
+            <!-- Title文字 -->
+
+            <TextView
+                style="@style/handTextView"
+                android:hint="@string/account_login" />
+        </RelativeLayout>
+        <!-- 导航栏下面的一条线 -->
+
+        <LinearLayout
+            style="@style/daohanglan_down_line"
+            android:layout_below="@id/rv_login_hand_daohang" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Login form -->
+    <!-- 大框架style -->
+
+    <LinearLayout
+        android:id="@+id/about_version_code"
+        style="@style/info_input_style"
+        android:layout_below="@id/rv_head" >
+
+        <!-- 用户名 -->
+
+        <RelativeLayout style="@style/info_input_smail_style" >
+
+            <ImageView
+                android:id="@+id/iv_login_ren"
+                style="@style/ImageViewUserName"
+                android:src="@drawable/img_username" />
+
+            <EditText
+                android:id="@+id/et_login_phone"
+                style="@style/EditTextUserName"
+                android:layout_toRightOf="@id/iv_login_ren"
+                android:hint="@string/peompt_phone" />
+
+            <LinearLayout style="@style/LineForEditTextDownLinearlayout" />
+        </RelativeLayout>
+        <!-- 密码 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_login_suozi"
+                style="@style/ImageViewUserName"
+                android:layout_marginBottom="8.5dp"
+                android:layout_marginLeft="6dp"
+                android:contentDescription="@drawable/img_passowrd"
+                android:src="@drawable/img_passowrd" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                style="@style/EditTextPassword"
+                android:layout_toRightOf="@id/iv_login_suozi"
+                android:hint="@string/peompt_password" />
+
+            <LinearLayout style="@style/LineForEditTextDownLinearlayout" />
+        </RelativeLayout>
+        <!-- 用户注册,游客模块 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:text="@string/action_register"
+                android:textColor="@drawable/image_tv_press"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:text="@string/forget_password"
+                android:textColor="@drawable/image_tv_press"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/bt_login_login"
+            style="@style/button_tongyong"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/image_btn_press"
+            android:text="@string/action_sign_in_short"
+            android:textColor="#cb2f83"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    tools:context=".model.loginRegiste.ForgetActivity" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/rv_head"
+        style="@style/relative_head" >
+
+        <!-- 顶部导航栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rv_login_hand_daohang"
+            style="@style/daohanglan_relative" >
+
+            <!-- 返回按钮 -->
+
+            <ImageButton
+                android:id="@+id/ibt_forget_back"
+                style="@style/daohanglan_back_button"
+                android:visibility="visible" />
+            <!-- Title文字 -->
+
+            <TextView
+                style="@style/handTextView"
+                android:hint="@string/forget_password_1" />
+        </RelativeLayout>
+        <!-- 导航栏下面的一条线 -->
+
+        <LinearLayout
+            style="@style/daohanglan_down_line"
+            android:layout_below="@id/rv_login_hand_daohang" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Login form -->
+    <!-- 大框架style -->
+
+    <LinearLayout
+        android:id="@+id/about_version_code"
+        style="@style/info_input_style"
+        android:layout_below="@id/rv_head"
+        android:paddingTop="20dp" >
+
+        <!-- 用户名 -->
+
+        <RelativeLayout style="@style/info_input_smail_style" >
+
+            <ImageView
+                android:id="@+id/iv_login_ren"
+                style="@style/ImageViewUserName"
+                android:src="@drawable/img_username" />
+
+            <EditText
+                android:id="@+id/et_forget_phone"
+                style="@style/EditTextUserName"
+                android:layout_toRightOf="@id/iv_login_ren"
+                android:hint="@string/peompt_phone" >
+            </EditText>
+
+            <LinearLayout style="@style/LineForEditTextDownLinearlayout" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/info_input_smail_style" >
+
+            <ImageView
+                android:id="@+id/iv_reg_code"
+                style="@style/ImageViewUserName"
+                android:src="@drawable/img_getcode" />
+            <!-- 输入框 -->
+
+            <EditText
+                android:id="@+id/et_forget_code"
+                style="@style/getCode_editText_input"
+                android:layout_toRightOf="@id/iv_reg_code"
+                android:hint="@string/peompt_code" />
+
+            <!-- 获取验证码的按钮 -->
+
+            <Button
+                android:id="@+id/bt_forget_getCode"
+                style="@style/getCode_button_getcode"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bt_getcode"
+                android:text="@string/peompt_getCode" />
+
+            <LinearLayout
+                style="@style/LineForEditTextDownLinearlayout"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_forget_next"
+            style="@style/button_tongyong"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/image_btn_press"
+            android:text="@string/forget_next"
+            android:textColor="#cb2f83"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

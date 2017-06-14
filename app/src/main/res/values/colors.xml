@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_bg_green">#6cbb52</color>
+    <color name="activity_bg">#f3f3f3</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="btn_back">#00A0DE</color>
+    <color name="bg">#65BBF6</color>
+    <color name="white_regirst_button_backgroud">#ffffff</color> <!-- 白色 -->
+
+    <color name="white">#ffffff</color>
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+
+    <!-- 文字点击变色 -->
+    <color name="software_textColor_selected">#666644</color>
+    <color name="software_textColor_unselected">#FFFFFF</color>
+</resources>

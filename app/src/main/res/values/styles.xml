@@ -1,0 +1,196 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 导航栏的高度 -->
+    <style name="daohanglan_height">
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!-- 导航栏上边距 -->
+    <style name="daohanglan_marginTop">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    <!-- 顶部Relative -->
+
+    <style name="daohanglan_relative" parent="daohanglan_marginTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 导航栏下面的一条线 -->
+    <style name="daohanglan_down_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#ffb0e0</item>
+    </style>
+    <!-- 导航栏返回按钮style -->
+    <style name="daohanglan_back_button" parent="daohanglan_height">
+        <item name="android:contentDescription">@string/peompt_rec</item>
+        <item name="android:src">@drawable/back_button_image</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- 头部导航栏 -->
+    <style name="relative_head">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+    <!-- 顶部title的Style -->
+    <style name="handTextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="parentScanStudentSecretInfoTextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">#ffffff</item>
+    </style>
+    <!-- 输入框下面的分割线Style -->
+    <style name="LineForEditTextDownLinearlayout">
+        <item name="android:background">#cd62be</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <!-- 注册登录,等输出框大框style -->
+    <style name="info_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">19dp</item>
+        <item name="android:layout_marginRight">19dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">156dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    <!-- 默认透明背景 -->
+
+    <style name="default_background">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 注册登录,等输出框小框style -->
+
+    <style name="info_input_smail_style" parent="@style/default_background">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 图片按钮通用Style -->
+    <style name="imageButton">
+        <item name="android:background">@null</item>
+    </style>
+    <!-- 通用relativeLayout -->
+    <style name="relativeLayout">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 离底部的距离 -->
+
+    <style name="marginBottom" parent="@style/default_background">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">8.5dp</item>
+    </style>
+
+    <!-- 提示图像 -->
+    <style name="ImageViewUserName" parent="marginBottom">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- 默认输入框 -->
+    <style name="base_edittext" parent="@style/marginBottom">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+    </style>
+
+    <!-- 账号输入 -->
+    <style name="EditTextUserName" parent="@style/base_edittext">
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">phone</item>
+    </style>
+    <!-- 密码输入 -->
+    <style name="EditTextPassword" parent="@style/base_edittext">
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <!-- 验证码输入 -->
+    <style name="EditTextCode">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- 内层里的输入框 -->
+    <style name="getCode_editText_input" parent="@style/base_edittext">
+        <item name="android:maxLength">6</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <!-- 外层1控制的按钮 -->
+    <style name="getCode_button_getcode">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#a7349d</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+    <!-- button -->
+    <style name="downlist_button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#a7349d</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+    <!-- 箭头 -->
+    <style name="downlist_arrow">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <!-- 最下方的按钮 -->
+    <style name="button_tongyong">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/img_button_login</item>
+        <item name="android:textColor">#cb2f83</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+</resources>
